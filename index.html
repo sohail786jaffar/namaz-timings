@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Namaz Timings</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Namaz Timings</h1>
+        <div class="input-container">
+            <select id="citySelect" class="js-example-basic-single" style="width: 100%;">
+                <option value="Abbottabad">Abbottabad</option>
+                <option value="Astore">Astore</option>
+                <option value="Bahawalnagar">Bahawalnagar</option>
+                <option value="Bahawalpur">Bahawalpur</option>
+                <option value="Burewala">Burewala</option>
+                <option value="Chiniot">Chiniot</option>
+                <option value="Chishtian">Chishtian</option>
+                <option value="Daska">Daska</option>
+                <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Gawadar">Gawadar</option>
+                <option value="Gilgit">Gilgit</option>
+                <option value="Gujranwala">Gujranwala</option>
+                <option value="Gujrat">Gujrat</option>
+                <option value="Hafizabad">Hafizabad</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Jhang">Jhang</option>
+                <option value="Jhelum">Jhelum</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Kasur">Kasur</option>
+                <option value="Khanewal">Khanewal</option>
+                <option value="Kharian">Kharian</option>
+                <option value="Khushab">Khushab</option>
+                <option value="Kohat">Kohat</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Larkana">Larkana</option>
+                <option value="Layyah">Layyah</option>
+                <option value="Lodhran">Lodhran</option>
+                <option value="Mandi Bahauddin">Mandi Bahauddin</option>
+                <option value="Mansehra">Mansehra</option>
+                <option value="Mardan">Mardan</option>
+                <option value="Mian Channu">Mian Channu</option>
+                <option value="Mianwali">Mianwali</option>
+                <option value="Mirpur">Mirpur</option>
+                <option value="Multan">Multan</option>
+                <option value="Muridke">Muridke</option>
+                <option value="Muzaffargarh">Muzaffargarh</option>
+                <option value="Nankana Sahib">Nankana Sahib</option>
+                <option value="Narowal">Narowal</option>
+                <option value="Okara">Okara</option>
+                <option value="Pakpattan">Pakpattan</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Rahim Yar Khan">Rahim Yar Khan</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Sahiwal">Sahiwal</option>
+                <option value="Sargodha">Sargodha</option>
+                <option value="Sheikhupura">Sheikhupura</option>
+                <option value="Sialkot">Sialkot</option>
+                <option value="Sukkur">Sukkur</option>
+                <option value="Tank">Tank</option>
+                <option value="Toba Tek Singh">Toba Tek Singh</option>
+                <option value="Vehari">Vehari</option>
+                <option value="Wah Cantonment">Wah Cantonment</option>
+                <option value="Wazirabad">Wazirabad</option>
+                <option value="Zhob">Zhob</option>
+                <option value="Ziarat">Ziarat</option>
+            </select>
+        </div>
+        <button onclick="fetchNamazTimings()">Get Namaz Timings</button>
+        <div id="namazTimings"></div>
+        <div id="loading" class="loader" style="display: none;"></div>
+        <h1 class="time"></h1>
+        <h1 class="date"></h1>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>
+
