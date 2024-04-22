@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 async function fetchNamazTimings() {
     const city = document.getElementById('citySelect').value;
-    const url = `http://api.aladhan.com/v1/calendarByCity?city=${city}&country=Pakistan&method=2`;
+    const url = `https://api.aladhan.com/v1/calendarByCity?city=${city}&country=Pakistan&method=2`;
     const loading = document.getElementById('loading');
     const namazTimingsDiv = document.getElementById('namazTimings');
 
