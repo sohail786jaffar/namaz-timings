@@ -5,7 +5,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
     margin: 0;
-    padding: 15px;
+    padding: 0px;
     background-image: url(https://images.pexels.com/photos/318451/pexels-photo-318451.jpeg?cs=srgb&dl=pexels-tayebmezahdia-318451.jpg&fm=jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,8 +19,10 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
+.wrapper{
+    margin: 10px;
+}
+h1,h2 {
     text-align: center;
     color: #333;
 }
@@ -99,4 +101,11 @@ tr:nth-child(odd){
 }
 button{
     width: 100%;
+}
+
+@media screen and (max-width:605px) {
+    .container{
+        margin: 15px;
+        
+    }
 }
